@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTISSCJ - Club de Invernaderos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5fdf6;
+      color: #2e4d34;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .club-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .left-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .left-img img {
+      width: 320px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border: 6px solid #a6d8a8;
+      transition: transform 0.4s ease;
+    }
+
+    .left-img img:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    .right-text {
+      flex: 1;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      border-left: 6px solid #4CAF50;
+    }
+
+    .right-text h2 {
+      font-size: 2rem;
+      color: #4CAF50;
+      margin-top: 0;
+    }
+
+    .right-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .registro {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 3rem auto;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      border-top: 5px solid #4CAF50;
+    }
+
+    .registro h2 {
+      color: #2e4d34;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .registro input,
+    .registro select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f1fdf3;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .registro button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .registro button:hover {
+      background: #449d48;
+    }
+
+    footer {
+      background: #4CAF50;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .club-section {
+        flex-direction: column;
+      }
+
+      .left-img img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Club de Invernaderos - CBTISSCJ</h1>
+  </header>
+  <section class="club-section">
+    <div class="left-img">
+      <img src="img/invernaderos.png" alt="Logo Club de Invernaderos">
+    </div>
+
+    <div class="right-text">
+      <h2>Sobre el Club</h2>
+      <p>
+        El Club de Invernaderos del CBTISSCJ es un espacio donde aprendemos a cultivar plantas, hortalizas y flores en ambientes controlados. Fomentamos la conciencia ambiental, la sustentabilidad y el trabajo colaborativo. Aquí experimentarás con tecnología agrícola, sistemas de riego y cuidado de cultivos. ¡Sembramos el futuro, hoy!
+      </p>
+    </div>
+  </section>
+
+  <section class="registro">
+    <h2>Registro de Participante</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <select required>
+        <option value="">Nivel de experiencia</option>
+        <option>Principiante</option>
+        <option>Intermedio</option>
+        <option>Avanzado</option>
+      </select>
+      <button type="submit">Unirme al club</button>
+    </form>
+  </section>
+  <button onclick="window.location.href='index.html'" class="btn-regresar">Regresar al Inicio</button>
+
+  <style>
+    .btn-regresar {
+      padding: 12px 30px;
+      background-color: #6a4cad;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-regresar:hover {
+      background-color: #5a3a9e;
+    }
+  </style>
+  
+    
+  <footer>
+    <p>© CBTISSCJ - Club de Invernaderos</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTISSCJ - Club de Voleibol</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9ff;
+      color: #1f1f1f;
+    }
+
+    header {
+      background: linear-gradient(to right, #0288d1, #03a9f4);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .club-voley {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .left-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-img img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(3, 169, 244, 0.3);
+      background: #ffffff;
+      padding: 10px;
+      transition: transform 0.4s ease;
+      border: 5px dashed #81d4fa;
+    }
+
+    .left-img img:hover {
+      transform: rotate(-3deg) scale(1.05);
+    }
+
+    .right-text {
+      flex: 1;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-left: 6px solid #0288d1;
+    }
+
+    .right-text h2 {
+      font-size: 2rem;
+      color: #0277bd;
+      margin-top: 0;
+    }
+
+    .right-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .registro {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 3rem auto;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      border-top: 5px solid #03a9f4;
+    }
+
+    .registro h2 {
+      color: #1f1f1f;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .registro input,
+    .registro select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f7f7f7;
+      font-size: 1rem;
+    }
+
+    .registro button {
+      width: 100%;
+      padding: 12px;
+      background: #0288d1;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .registro button:hover {
+      background: #0277bd;
+    }
+
+    footer {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .club-voley {
+        flex-direction: column;
+      }
+
+      .left-img img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Club de Voleibol - CBTISSCJ</h1>
+  </header>
+
+  <section class="club-voley">
+    <div class="left-img">
+      <img src="img/voly.png" alt="Logo Club de Voleibol">
+    </div>
+
+    <div class="right-text">
+      <h2>Sobre el Club</h2>
+      <p>
+        ¿Te apasiona el deporte, el trabajo en equipo y la adrenalina de la competencia? Únete al Club de Voleibol del CBTISSCJ. Entrena, mejora tus habilidades, compite en torneos escolares y forma parte de una comunidad que vibra con cada punto. 🏐
+      </p>
+    </div>
+  </section>
+
+  <section class="registro">
+    <h2>Registro de Participante</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <select required>
+        <option value="">Nivel de juego</option>
+        <option>Principiante</option>
+        <option>Intermedio</option>
+        <option>Avanzado</option>
+      </select>
+      <button type="submit">Unirme al club</button>
+    </form>
+  </section>
+  <button onclick="window.location.href='index.html'" class="btn-regresar">Regresar al Inicio</button>
+
+  <style>
+    .btn-regresar {
+      padding: 12px 30px;
+      background-color: #6a4cad;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-regresar:hover {
+      background-color: #5a3a9e;
+    }
+  </style>
+  
+  <footer>
+    <p>© CBTISSCJ - Club de Voleibol</p>
+  </footer>
+
+</body>
+</html>

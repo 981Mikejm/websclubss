@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTISSCJ - Club de Canto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdf8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #6a4cad;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .club-canto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .club-logo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .club-logo img {
+      width: 360px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+      border: 6px solid #b08bf1;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .club-logo img:hover {
+      transform: scale(1.05);
+    }
+
+    .right-text {
+      flex: 1;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-left: 6px solid #b08bf1;
+    }
+
+    .right-text h2 {
+      font-size: 2rem;
+      color: #6a4cad;
+      margin-top: 0;
+    }
+
+    .right-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .registro {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 3rem auto;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      border-top: 5px solid #6a4cad;
+    }
+
+    .registro h2 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .registro input,
+    .registro select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f7f7f7;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .registro button {
+      width: 100%;
+      padding: 12px;
+      background: #6a4cad;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .registro button:hover {
+      background: #5a3a9e;
+    }
+
+    footer {
+      background: #6a4cad;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .club-canto {
+        flex-direction: column;
+      }
+
+      .club-logo img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Club de Canto - CBTISSCJ</h1>
+  </header>
+
+  <section class="club-canto">
+    <div class="club-logo">
+      <img src="img/Club de canto.png" alt="Logo del Club de Canto">
+    </div>
+
+    <div class="right-text">
+      <h2>Sobre el Club</h2>
+      <p>
+        El Club de Canto del CBTISSCJ es un espacio para quienes aman expresarse a través de la música. Aquí aprenderás técnicas vocales, trabajarás en presentaciones artísticas y descubrirás tu potencial musical. Participamos en eventos escolares y concursos culturales. ¡Déjate llevar por tu voz!
+      </p>
+    </div>
+  </section>
+
+  <section class="registro">
+    <h2>Registro de Participante</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <select required>
+        <option value="">Nivel de experiencia</option>
+        <option>Principiante</option>
+        <option>Intermedio</option>
+        <option>Avanzado</option>
+      </select>
+      <button type="submit">Unirme al club</button>
+    </form>
+  </section>
+  <button onclick="window.location.href='index.html'" class="btn-regresar">Regresar al Inicio</button>
+
+  <style>
+    .btn-regresar {
+      padding: 12px 30px;
+      background-color: #6a4cad;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-regresar:hover {
+      background-color: #5a3a9e;
+    }
+  </style>
+  
+  <footer>
+    <p>© CBTISSCJ - Club de Canto</p>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTISSCJ - Club de Atletismo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #1a2b4c;
+      padding: 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .club-atletismo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .left-imgs {
+      flex: 1;
+      text-align: center;
+    }
+
+    .left-imgs img {
+      width: 280px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .left-imgs img:hover {
+      transform: scale(1.03);
+    }
+
+    .right-text {
+      flex: 1;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .right-text h2 {
+      font-size: 1.9rem;
+      color: #1a2b4c;
+    }
+
+    .right-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+      color: #444;
+    }
+
+    .registro {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 3rem auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    }
+
+    .registro h2 {
+      color: #1a2b4c;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .registro input,
+    .registro select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f4f4f4;
+      color: #2c3e50;
+      font-size: 1rem;
+    }
+
+    .registro button {
+      width: 100%;
+      padding: 12px;
+      background: #c7a83f;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .registro button:hover {
+      background: #b7952d;
+    }
+
+    footer {
+      background: #1a2b4c;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .club-atletismo {
+        flex-direction: column;
+      }
+
+      .left-imgs img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Club de Atletismo - CBTISSCJ</h1>
+  </header>
+
+  <section class="club-atletismo">
+    <div class="left-imgs">
+      <img src="img/Club de ATLETISMO.png">
+      <img src="img/Club de ATLETISMO.png" alt="LOGO">
+    </div>
+
+    <div class="right-text">
+      <h2>Sobre el Club</h2>
+      <p>
+        El Club de Atletismo del CBTISSCJ está enfocado en desarrollar la resistencia, velocidad y disciplina de sus integrantes. Participamos en actividades físicas, entrenamientos semanales y eventos deportivos. ¡Anímate a superarte!
+      </p>
+    </div>
+  </section>
+
+  <section class="registro">
+    <h2>Formulario de Registro</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <select required>
+        <option value="">Nivel de resistencia</option>
+        <option>Bajo</option>
+        <option>Medio</option>
+        <option>Alto</option>
+      </select>
+      <button type="submit">Registrarme</button>
+    </form>
+  </section>
+  <button onclick="window.location.href='index.html'" class="btn-regresar">Regresar al Inicio</button>
+
+  <style>
+    .btn-regresar {
+      padding: 12px 30px;
+      background-color: #6a4cad;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-regresar:hover {
+      background-color: #5a3a9e;
+    }
+  </style>
+  
+  <footer>
+    <p>© CBTISSCJ - Club de Atletismo</p>
+  </footer>
+
+</body>
+</html>
+

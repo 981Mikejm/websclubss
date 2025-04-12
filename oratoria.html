@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTISSCJ - Club de Oratoria</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+      letter-spacing: 1.2px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      font-variant: small-caps;
+    }
+
+    .club-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .left-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .left-img img {
+      width: 320px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 6px solid #888;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease;
+    }
+
+    .left-img img:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+
+    .right-text {
+      flex: 1;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      border-left: 6px solid #222;
+    }
+
+    .right-text h2 {
+      font-size: 2rem;
+      color: #444;
+      margin-top: 0;
+    }
+
+    .right-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .registro {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 3rem auto;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      border-top: 5px solid #444;
+    }
+
+    .registro h2 {
+      color: #222;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .registro input,
+    .registro select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #bbb;
+      border-radius: 8px;
+      background: #f4f4f4;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .registro button {
+      width: 100%;
+      padding: 12px;
+      background: #222;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .registro button:hover {
+      background: #111;
+    }
+
+    footer {
+      background: #222;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .club-section {
+        flex-direction: column;
+      }
+
+      .left-img img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Club de Oratoria - CBTISSCJ</h1>
+  </header>
+
+  <section class="club-section">
+    <div class="left-img">
+      <img src="img/oratoria.png" alt="Logo de oratoria">
+    </div>
+
+    <div class="right-text">
+      <h2>Sobre el Club</h2>
+      <p>
+        En el Club de Oratoria del CBTISSCJ formamos a los líderes del mañana a través del arte de la palabra. Aquí aprenderás técnicas para hablar con seguridad, persuadir con tu voz y dominar el escenario con tu presencia. ¡Atrévete a expresar lo que piensas y siente el poder de tu voz!
+      </p>
+    </div>
+  </section>
+
+  <section class="registro">
+    <h2>Registro de Participante</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <select required>
+        <option value="">Nivel de confianza al hablar</option>
+        <option>Inseguro</option>
+        <option>Moderado</option>
+        <option>Muy seguro</option>
+      </select>
+      <button type="submit">Unirme al club</button>
+    </form>
+  </section>
+  <button onclick="window.location.href='index.html'" class="btn-regresar">Regresar al Inicio</button>
+
+  <style>
+    .btn-regresar {
+      padding: 12px 30px;
+      background-color: #6a4cad;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-regresar:hover {
+      background-color: #5a3a9e;
+    }
+  </style>
+  
+  <footer>
+    <p>© CBTISSCJ - Club de Oratoria</p>
+  </footer>
+
+</body>
+</html>
